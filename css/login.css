@@ -1,0 +1,107 @@
+body{
+    font-family:sans-serif;
+}
+/* main container */
+.container{
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+@media (min-width: 768px)
+{
+    .container{
+        width: 750px;
+    }
+        .container .loginform{
+        width: 300px;
+    }
+}
+
+/* medium */
+@media(min-width:992px){
+    .container{
+        width: 970px;
+    }
+     .container .loginform{
+        width: 400px;
+    }
+}
+/* large */
+@media(min-width:1200px){
+    .container{
+        width: 1170px;
+    }
+    .container .loginform{
+        width: 500px;
+    }
+}
+/*  end main container */
+/* start header  */
+header .container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 10vh;
+
+}
+/* 2 headers links */
+header .container nav ul li,
+.loginheader .links ul li{
+    list-style-type: none;
+    display: inline-block;
+    padding:10px
+}
+/* end header  */
+/* start login header */
+.loginheader{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: black;
+    color: white;
+}
+/* end  login header */
+/* start section */
+section .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+section .container .loginform{
+    background-color: #F7F7F7;
+    height: 80vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+section .container .loginform form{
+    /* padding: 30%; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    
+}
+section .container .loginform form input{
+    background-color: 10px;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="submit"]{
+    width: 400px;
+    height: 40px;
+    border: gray;
+}
+input[type="submit"]{
+    background-color: black;
+    color: white;
+}
+input[type="submit"]:hover{
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+}
+/* end section */

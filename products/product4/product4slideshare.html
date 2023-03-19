@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/adc5c6a0d2.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+    <style>
+        img{
+            width: 100vh;
+            height: 100vh;
+            display: inline-block;
+        }
+        i{
+            scale: 200%;
+            color: rgb(40, 38, 38);
+            display: inline-block;
+            position: absolute;
+            margin-top: 50px;
+            margin-left:-80px;
+        }
+    </style>
+</head>
+<body>
+    <img id="slider"src="1.jpg" onmouseover="Slideshow(this)"/>
+    <i id="closeicone" onclick="closewindow()" class="fa-solid fa-circle-xmark"></i>
+    <!-- --------------------------------------------------------------------------------------------------- -->
+    <script>
+        
+
+        i=1;
+var stopsh;
+function Slideshow(){
+stopsh=setInterval(function(){
+ document.getElementById("slider").src=i+".jpg"
+i++
+  if(i==4){
+     i=1
+ }
+},2000)
+}
+
+function closewindow(){
+close()
+  }
+
+
+
+  
+    </script>
+</body>
+</html>

@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   
+    <title>Document</title>
+    <!-- font awesome -->
+    <link rel="stylesheet" href="css/all.min.css">
+    <!-- main style file -->
+    <link rel="stylesheet" href="css/product.css">
+    <script src="https://kit.fontawesome.com/adc5c6a0d2.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- start header -->
+    <header>
+        <div class="container">
+            <img  id ="logo "src="images/logo.png">
+            <nav>
+                <ul>
+                    <li>Home</li>
+                    <li>Shop</li>
+                    <li>Sale</li>
+                    <li>Pages</li>
+                    <li>Blog</li>
+                    <li>Element</li>
+                    <li>Featutrs</li>
+                </ul>
+            </nav>
+            <div class="icons">
+                <i class="fa-regular fa-user"></i>
+                <i class="fa-regular fa-heart"></i>
+                <i class="fa-solid fa-cart-shopping"></i>
+            </div>
+        </div>
+    </header>
+    
+    
+    
+    <div class="loginheader">
+            <h3>My account</h3>
+            <div class="links">
+                <ul>
+                    <li>Home</li>
+                    <li>My account</li>
+                </ul>
+        </div>
+    </div>
+    <div  class="bla">
+        
+        <section class ="shop">
+
+            <h1 id="Title">All Products</h1>
+            <div class="nav-bar"></div>
+            
+            </div>
+
+            <div class="item" >
+                <img src="images/1.jpg" alt=""onclick="openproduct(this)">
+                <p class="name"onclick="openproductbyname(this)"  >Casual Women Bag</p>
+                <p><del>£150.00 </del>&emsp;£130.00</p>
+                <p class="Addtocart">Add To Cart</p>
+                <i id="heart" class="fa-regular fa-heart" onclick="changecolor(this)"></i>
+                <i class="fa-regular fa-eye"onclick="viewproduct(this)"></i>
+            </div>
+            <div class="item" >
+                <img src="images/2.jpg" alt=""onclick="openproduct(this)">
+                <p class="name"onclick="openproductbyname(this)"  >Jeenu Casual Backpack</p>
+                <p><del>£150.00 </del>&emsp;£100.00</p>
+                <p class="Addtocart">Add To Cart</p>
+                <i id="heart" class="fa-regular fa-heart" onclick="changecolor(this)"></i>
+                <i class="fa-regular fa-eye"onclick="viewproduct(this)"></i>
+            </div>
+            <div class="item">
+                <img src="images/3.jpg" alt=""onclick="openproduct(this)">
+                <p class="name"  onclick="openproductbyname(this)">Rajni Fashion Bag</p>
+                <p><del>£50.00 </del>&emsp; £25.00</p>
+                <p class="Addtocart">Add To Cart</p>
+                <i id="heart" class="fa-regular fa-heart" onclick="changecolor(this)"></i>
+                <i class="fa-regular fa-eye"onclick="viewproduct(this)"></i>
+            </div>
+            <div class="item">
+                <img src="images/4.jpg" alt="" onclick="openproduct(this)">
+                <p class="name" onclick="openproductbyname(this)">Desence Stylish Backpack</p>
+                <p><del>£180.00 </del>&emsp;£150.00</p>
+                <p class="Addtocart">Add To Cart</p>
+                <i id="heart" class="fa-regular fa-heart" onclick="changecolor(this)"></i>
+                <i class="fa-regular fa-eye"onclick="viewproduct(this)"></i>
+            </div>
+            <div class="item">
+                <img src="images/5.jpg" alt="" onclick="openproduct(this)">
+                <p class="name"  onclick="openproductbyname(this)">Eva Elegant Backpack</p>
+                <p><del>£50.00  </del>&emsp;£25.00</p>
+                <p class="Addtocart">Add To Cart</p>
+                <i id="heart" class="fa-regular fa-heart" onclick="changecolor(this)"></i>
+                <i class="fa-regular fa-eye"onclick="viewproduct(this)"></i>
+            </div>
+            <div class="item">
+                <img src="images/6.jpg" alt="" onclick="openproduct(this)">
+                <p class="name"  onclick="openproductbyname(this)">Girls Stylish Backpack</p>
+                <p><del>£50.00 </del>&emsp;£25.00</p>
+                <p class="Addtocart">Add To Cart</p>
+                <i id="heart" class="fa-regular fa-heart" onclick="changecolor(this)"></i>
+                <i class="fa-regular fa-eye"onclick="viewproduct(this)"></i>
+            </div>
+            <div class="item">
+                <img src="images/7.jpg" alt=""onclick="openproduct(this)">
+                <p class="name"  onclick="openproductbyname(this)">Ridgewood PU Leather</p>
+                <p><del>£50.00  </del>&emsp;£25.00</p>
+                <p class="Addtocart">Add To Cart</p>
+                <i id="heart" class="fa-regular fa-heart" onclick="changecolor(this)"></i>
+                <i class="fa-regular fa-eye"onclick="viewproduct(this)"></i>
+            </div>
+            <div class="item">
+                <img src="images/8.jpg" alt=""onclick="openproduct(this)">
+                <p class="name" onclick="openproductbyname(this)">Zipper Pithu Bag</p>
+                <p><del>£50.00 </del>&emsp;£25.00</p>
+                <p class="Addtocart">Add To Cart</p>
+                <i id="heart" class="fa-regular fa-heart" onclick="changecolor(this)"></i>
+                <i class="fa-regular fa-eye"onclick="viewproduct(this)"></i>
+            </div>
+            <div class="item">
+                <img src="images/9.jpg" alt="" onclick="openproduct(this)">
+                <p class="name" onclick="openproductbyname(this)">Black Women Sling Bag</p>
+                <p><del>£150.00 </del>&emsp;£50.00</p>
+                <p class="Addtocart">Add To Cart</p>
+                <i id="heart" class="fa-regular fa-heart" onclick="changecolor(this)"></i>
+                <i class="fa-regular fa-eye"onclick="viewproduct(this)"></i>
+            </div>
+            <div class="item">
+                <img src="images/10.jpg" alt="" onclick="openproduct(this)">
+                <p class="name" onclick="openproductbyname(this)">Cindy Backpack Medium</p>
+                <p><del>£510.00 </del>&emsp;£130.00</p>
+                <p class="Addtocart">Add To Cart</p>
+                <i id="heart" class="fa-regular fa-heart" onclick="changecolor(this)"></i>
+                <i class="fa-regular fa-eye"onclick="viewproduct(this)"></i>
+            </div>
+            <div class="item">
+                <img src="images/11.jpg" alt="" onclick="openproduct(this)">
+                <p class="name" onclick="openproductbyname(this)">Leather Kenton Backpack</p>
+                <p><del>  £50.00 </del>&emsp;£20.00</p>
+                <p class="Addtocart">Add To Cart</p>
+                <i id="heart" class="fa-regular fa-heart" onclick="changecolor(this)"></i>
+                <i class="fa-regular fa-eye" onclick="viewproduct(this)"></i>
+            </div>
+            <div class="item">
+                <img src="images/12.jpg" alt=""onclick="openproduct(this)">
+                <p class="name" onclick="openproductbyname(this)">College Stylish Backpack</p>
+                <p><del>£150.00 </del>&emsp;£130.00</p>
+                <p class="Addtocart">Add To Cart</p>
+                <i id="heart" class="fa-regular fa-heart" onclick="changecolor(this)"></i>
+                <i class="fa-regular fa-eye"onclick="viewproduct(this)"></i>
+            </div>
+
+            
+        </section>
+<div  style="clear: both;"></div>
+
+    </div>
+    
+            
+        
+     <!-- end login section -->
+     <footer>
+        
+
+        <!-- start footer  -->
+    <div class="footer">
+        <div class="container">
+            <div class="main">
+                <div class="sec">
+                    <h4>About company overview</h4>
+                    <p>Big clothes brand hongo. Lorem Ipsum is simply dummy text of the printing and typesetting industry lorem ipsum.</p>
+                    <ul class="icons">
+                        <li><i class="fa-brands fa-cc-visa"></i></li>
+                        <li><i class="fa-brands fa-cc-mastercard"></i></li>
+                        <li><i class="fa-brands fa-cc-apple-pay"></i></li>
+                        <li><i class="fa-brands fa-cc-paypal"></i></li>
+                        <li><i class="fa-brands fa-cc-amazon-pay"></i></li>
+                    </ul>
+                </div>
+                <div class="sec">
+                    <h4>Categories</h4>
+                    <ul>
+                        <li><i>Women collection</i></li>
+                        <li><i>Men collection</i></li>
+                        <li><i>Child collection</i></li>
+                        <li><i>Accessories</i></li>
+                        <li><i>Leather shoes</i></li>
+                    </ul>
+                </div><div class="sec">
+                    <h4>Customer</h4>
+                    <ul>
+                        <li><i>Help and support</i></li>
+                        <li><i>Shipping and delivery</i></li>
+                        <li><i>Payment method</i></li>
+                        <li><i>Terms and conditions</i></li>
+                        <li><i>Privacy policy</i></li>
+                    </ul>
+                </div><div class="sec">
+                    <h4>Store contact info</h4>
+                    <ul>
+                        <li>Phone:<i> +1 234 567 890</i></li>
+                        <li>Fax:<i> +1 234 567 890</i></li>
+                        <li>Address: <i> 12 st anonymous</i></li>
+                        <li>Email:<i> info@domain.com</i></li>
+                        <li><ul class="icons">
+                            <li><i class="fa-brands fa-facebook-f"></i></li>
+                            <li><i class="fa-brands fa-twitter"></i></li>
+                            <li><i class="fa-brands fa-instagram"></i></li>
+                            <li><i class="fa-brands fa-linkedin-in"></i></li>
+                            <li><i class="fa-brands fa-pinterest-p"></i></li>
+                        </ul></li>
+                    </ul>
+                </div><div class="sec">
+                    <h4>Last chance to win our discount!</h4>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text.</p>
+                    
+                </div>
+            </div>
+          
+        </div>
+    </div>
+    <div class="foot">
+        <p>
+            © 2023 HONGO is Proudly Powered by <span>3E2F <i class="fa-regular fa-heart"></i></span>
+        </p>
+    </div>
+    <!-- end footer  -->
+     </footer>
+     <!-- ------------------------------------------------------------------------------------------------------------------------- -->
+     <script>
+        function changecolor(icon){
+    var clickstate=icon.classList.value
+   
+    if(clickstate==="fa-regular fa-heart" )
+   {
+    icon.setAttribute("class", "fa-solid fa-heart");
+   } 
+   else {
+    icon.setAttribute("class", "fa-regular fa-heart");
+   }
+ }
+
+
+
+
+
+ function openproduct(image1){
+
+   var imagenumber=image1.getAttribute("src").split("/")[1].split(".")[0]
+    //console.log(image1.getAttribute("src"))
+    open("file:///D:/ITI%20FULL%20STACK%20.NET/Frontend/Project/products/Product"+imagenumber+"/product"+imagenumber+".html")
+  }
+
+
+ function openproductbyname(getnum){
+   var num= getnum.parentElement.querySelector("img").getAttribute("src").split("/")[1].split(".")[0]
+   open("file:///D:/ITI%20FULL%20STACK%20.NET/Frontend/Project/products/Product"+num+"/product"+num+".html")
+ }
+
+ 
+ function viewproduct(getnumb){
+   var numb= getnumb.parentElement.querySelector("img").getAttribute("src").split("/")[1].split(".")[0]
+    open("file:///D:/ITI%20FULL%20STACK%20.NET/Frontend/Project/products/Product"+numb+"/product"+numb+"slideshare.html","width=300,height=300","screen x=50","screen y=50")
+
+ }
+ 
+     </script>
+
+</body>
+</html>

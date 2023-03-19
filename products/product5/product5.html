@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/adc5c6a0d2.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+    <style>
+        *{border: 0;
+            margin: 0;
+        }
+    
+       
+      .nav-bar {
+  margin-top: 30px;
+  border-bottom: 1px solid rgba(58, 57, 57, 0.185);
+  display: block;
+  margin-bottom: 30px;
+
+}
+        
+        .container{
+            width: 100vw;
+            height: 100vh;
+            background-color: black;
+            opacity: 80%;
+            padding: 10px;
+          
+            
+        }
+        .innerwindow{
+            
+             display: flex;
+             align-items: center;
+             justify-content: center;
+             background-color:#F7F7F7 ;
+             
+             display: inline-block;
+             margin-left: 250px;
+             margin-top: 120px;
+
+            }
+         .side1{
+            display: inline-block;
+            float: left;
+         }
+         .side1 i{
+           color: black;
+           display: inline;
+          position: absolute;
+          margin-top:280px;
+         }
+
+         img{
+            display: inline-block;
+            margin:20px ;
+         }
+img:hover{
+    box-shadow: 10px 10px 10px rgb(154, 153, 153);
+    scale: 1.03;
+}
+
+
+         /* --------------------------------------------------------------- */
+
+         .side2{
+            margin-top: 20px;
+            float: left;
+            width: 400px;
+            background-color: white;
+            
+         }
+        
+          p{
+            font-style:italic ;
+            text-align: center;
+            color: rgb(44, 43, 43)4, 43, 43"
+         }
+         .numberofproduct{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+         }
+         .colors{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+         }
+.side2 button{
+    background-color: black;
+    color: white;
+    margin: 10px;
+    padding: 10px;
+}
+ul li{
+    list-style: none;
+    color: #CF9B3C;
+    display: inline;
+    margin: 5px;
+}
+.contact{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+           
+}
+ button:hover{
+    box-shadow:5px 5px 5px rgb(154, 153, 153); 
+    
+ }
+
+ span{
+    border: 2px solid transparent;
+    
+ 
+ }
+ span:hover{
+    box-shadow:5px 5px 5px rgb(154, 153, 153);
+    
+ }
+    </style>
+<!--Html -------------------------------------------------------------------------------------------------------------------------------- -->
+</head>
+
+<body>
+    
+    <!-- all window -->
+    <div  class="container"> 
+        <!-- product window --------------------------------------------------------------------->
+        <div class="innerwindow" > 
+            <aside class="side1">
+                <i onclick="Previous()" class="fa-sharp fa-solid fa-circle-chevron-left"></i>             
+                <img id="slider"src="1.jpg" width="500px" height="500px" />
+                <i onclick="Next()" class="fa-solid fa-circle-chevron-right"></i>
+                
+               
+
+            </aside>
+            <!-- -----------side2------------------------------------------------------------- -->
+            <aside class="side2">
+                    <h1 style="text-align: center;color: #CF9B3C;" class="name">Eva Elegant Backpack</h1>
+               
+                    <p><del>£180.00 </del>&emsp;£150.00</p>
+
+
+
+
+                     <div class="nav-bar"></div>
+
+
+
+
+
+                     <br>
+                     <p >Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                     Lorem Ipsum has been the standard dummy text. Lorem Ipsum is simply dummy 
+                     text of the printing and typesetting industry.</p>
+                     
+                     <div class="nav-bar"></div>
+
+                     
+                     <!-- -----------colors---------------->
+                     <div class="colors">
+                        <label for="color">color:</label>
+                             <span onclick="changeborder(this)" style="background-color: rgb(82, 37, 65);width: 40px;height: 20px;display:inline-block ;border: 0px;margin:5px ;"></span>
+                             <span onclick="changeborder(this)" style="background-color:rgb(29, 31, 27);width: 40px;height: 20px;display:inline-block ;border: 0px;margin:5px ;"></span>
+                              <span onclick="changeborder(this)" style="background-color:rgb(96, 84, 45);width: 40px;height: 20px;display:inline-block ;border: 0px;margin:5px ;"></span>        
+                            <div style="clear: both;"></div>
+                     </div>
+                     
+
+                             <!-- -------------number of product--------------------------- -->
+                         <div class="numberofproduct">
+                            <input id="productnumber" type="text" disabled value="0" size="2px" style="border: 1px solid black;">
+                             <button onclick="Add()" style="display:inline-block ;border: 1px solid black;margin:1px;">+</button>
+                              <button onclick="Subtracts()" style="display:inline-block ;border: 1px solid black;margin:1px;">-</button>
+                              <button >Add To Cart <i class="fa-solid fa-cart-shopping"></i></button>
+                              <button >Add To Favorite <i class="fa-sharp fa-solid fa-heart"></i></button>
+                         </div>
+                     
+                     
+                     
+                        <br><br>
+                        
+                        
+                        <p >Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                            Lorem Ipsum has been the standard dummy text.</p>
+                            
+                            <div class="nav-bar"></div>
+                 <!-- ------------------------contact------------------------------->
+              <div clas="contact">
+                <ul >
+                    <li><i class="fa-brands fa-facebook-f"></i></li>
+                    <li><i class="fa-brands fa-twitter"></i></li>
+                    <li><i class="fa-brands fa-instagram"></i></li>
+                    <li><i class="fa-brands fa-linkedin-in"></i></li>
+                    <li><i class="fa-brands fa-pinterest-p"></i></li>
+                </ul>
+              </div>
+                            
+            </aside> 
+        </div>
+
+    </div>
+<!--JS -------------------------------------------------------------------------------------------------------------------------------- -->
+    <script>
+        
+       var i=1;
+   function Next(){
+    i++
+    document.getElementById("slider").src=i+".jpg"
+         if(i==4)
+   {
+    i=0
+   }
+   
+}
+
+function Previous(){
+    i=i-1
+    document.getElementById("slider").src=i+".jpg"
+    if(i==1)
+   {
+    i=5
+   }
+}
+
+function changeborder(spcolor)
+{
+
+    // activestate=spcolor.style.border
+    // console.log(activestate)
+    // if(activestate=="2px solid transparent")
+    // {
+        spcolor.style.border="2px solid blue";
+//     }
+    
+//   else{
+//     spcolor.style.setAttribute("border", "2px solid transparent");
+//   }
+    
+    
+    
+}
+
+var n=0;
+function Add(){
+    document.getElementById("productnumber").value=n
+    n++
+}
+function Subtracts(){
+    document.getElementById("productnumber").value=n
+    n--
+}
+    </script>
+</body>
+</html>
